@@ -1,0 +1,202 @@
+.container{
+    text-align: center;
+    transform: scale(0.8);
+    transform-origin: top center;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 60px;
+    color: white; /* culoarea interioară */
+    text-shadow:
+        2px 2px 0 #000,
+       -2px 2px 0 #000,
+        2px -2px 0 #000,
+       -2px -2px 0 #000,
+        0px 2px 0 #000,
+        2px 0px 0 #000,
+        0px -2px 0 #000,
+       -2px 0px 0 #000; /* contur negru */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset,
+.back {
+  width: 260px;
+  height: 80px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 15px 0;
+  transition: 0.3s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reset {
+  background: linear-gradient(145deg, #000000, #222222);
+}
+
+.reset:hover {
+  background: linear-gradient(145deg, #222222, #000000);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.back {
+  background: linear-gradient(145deg, #a31025, #d0123a);
+}
+
+.back:hover {
+  background: linear-gradient(145deg, #d0123a, #a31025);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.boxes{
+    display: flex;
+    height: 180px;
+    width: 180px;
+    background: #303233;
+    border: 4px solid #161616;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.board{
+    height: 600px;
+    width: 564px;
+    display: flex;
+    margin: auto;
+}
+
+.boxes img{
+    margin: 50px 50px;
+}
+
+.title img{
+    padding: 20px 20px;
+    height:  20px;
+}
+
+/* ===== Meniu principal ===== */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #7a132a, #000000);
+  color: white;
+}
+
+.menu-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-buttons button {
+  background: #921a34;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-buttons button:hover {
+  background: #701428;
+  transform: scale(1.05);
+}
+
+.next-move {
+  color: white;
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.scoreboard h3 {
+  color: white; /* alb */
+  font-size: 1.5rem;
+  background: rgba(0,0,0,0.5); /* semi-transparent pe fundalul board-ului */
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+/* ===== Popup ===== */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85); /* mai întunecat decât înainte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: #1a1a1a;
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7); /* puțin mai intens */
+    color: white;
+    min-width: 300px;
+}
+
+.popup h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.popup button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #a31025;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.popup button:hover {
+    background: #d0123a;
+    transform: scale(1.05);
+}
+.winning-box {
+  border: 4px solid #9c2740; /* border albastru deschis */
+  background-color: rgba(0, 255, 255, 0.2); /* fundal semi-transparent */
+  transition: 0.3s;
+}
+
