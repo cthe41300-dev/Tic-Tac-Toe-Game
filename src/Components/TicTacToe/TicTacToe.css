@@ -68,6 +68,11 @@
     border: 4px solid #161616;
     border-radius: 12px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /* elimină highlight pe mobil */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .board{
@@ -199,7 +204,6 @@
   transition: 0.3s;
 }
 
-/* ===== Responsive pentru telefoane ===== */
 @media (max-width: 600px) {
   .container {
     transform: scale(1);
